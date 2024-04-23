@@ -55,5 +55,5 @@ logoutButton.addEventListener('click', logout)
 function logout(){
     localStorage.clear();
     location.reload();
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
   }
