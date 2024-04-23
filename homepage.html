@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home page</title>
+    <script type="module">
+        import { getUserData } from "./js/data.js"
+        getUserData()
+    </script>
+</head>
+<body>
+    <div class="header">
+        <button class="logout">Log out</button>
+    </div>
+    <div class="userInfo">
+        <div class="auditRatio">
+        <h2 style="margin-left: 20px;">Audits ratio</h1>
+            <div class="total">
+                <svg width="160" height="30">
+                    <rect x="0" y="25"  height="10" class="totalBar" width="" fill="blue"/>
+                  </svg>
+            </div>
+            <div class="down">
+                <svg width="160" height="30" class="test">
+                    <rect x="0" y="25"  height="10" class="downBar" width="" fill="blue" />
+                  </svg>
+            </div>
+        </div>
+        <div class="ProjectsAndXp">
+            <div class="Projects"></div>
+            <h2 class="activity"> Last activity</h2>
+            <hr class="hrMove">
+            <div class="Xp"></div>
+        </div>
+        <div class="doneProjects">
+            <h2 style="text-align: center;">10 finished projects with the highest XP</h2>
+            <svg width="730" height="430" xmlns="http://www.w3.org/2000/svg" class="svg">
+                <!-- x-axis line -->
+                <line x1="230" y1="400" x2="670" y2="400" style="stroke:black;stroke-width:2" />
+                <!-- y-axis line -->
+                <line x1="230" y1="400" x2="230" y2="20" style="stroke:black;stroke-width:2" />
+
+                <!-- data -->
+                <g class="bars">
+                </g>
+                <!-- axis labels -->
+                <text x="225" y="420" fill="black">0 KB</text>
+                <text x="610" y="420" fill="black" class="maxXpText"></text>
+              
+              </svg>
+        </div>
+        <div class="XpProgress">
+            <h3 style="text-align: center;" height="5px">XP progression</h3>
+            <svg width="544" height="530" xmlns="http://www.w3.org/2000/svg" class="svgProgress">
+                <line x1="20" y1="420" x2="510" y2="420" style="stroke:black;stroke-width:2" />
+                <line x1="20" y1="420" x2="20" y2="20" style="stroke:black;stroke-width:2" />
+                <text x="6" y="440" fill="black">0 KB</text>
+                <text x="5" y="15" fill="black" class="XpProgressNumber"></text>
+                <polyline class="xpLine" fill="none" stroke="blue" stroke-width="2" points="" />
+                <g class="xpPointsGroup"></g>
+            </svg>
+
+        </div>
+    </div>
+</body>
+</html>

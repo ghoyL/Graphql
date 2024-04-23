@@ -1,0 +1,186 @@
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+body {
+  background-color: #45474B;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.submit{
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.userInfo {
+  width: 1317px;
+  height: auto;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.auditRatio {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 356px;
+  height: 270px;
+  float: right;
+  margin-right: 3vh;
+  margin-top: 3vh;
+  background-color: #E8DFCA;
+}
+
+.totalUp{
+    float: right;
+    margin-left: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.totalDown {
+  float: right;
+  margin-left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.auditRatioNum {
+    font-size: 70px;
+    display: flex;
+    position: absolute;
+    top: 18%;
+    margin-left: 20px;
+}
+
+.header{
+  position: absolute;
+  left: 17%;
+  display: flex;
+}
+
+.username{
+  font-size: 25px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: #E8DFCA;
+}
+
+.usernameLogin{
+  border-radius: 5px;
+  height: 20px;
+}
+
+.password{
+  border-radius: 5px;
+  height: 20px;
+
+}
+
+.logout{
+  margin-right: 10px;
+  margin-top: 23px;
+  border: transparent;
+  background-color: transparent;
+  height: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  color:#E8DFCA;
+}
+
+.ProjectsAndXp{
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 270px;
+  width: 864px;
+  margin-left: 3vh;
+  margin-top: 3vh;
+  background-color: #E8DFCA;
+}
+
+
+.Projects{
+  float: right;
+  position: absolute;
+  left: 36.5%;
+  top: 100px;
+}
+
+.hrMove {
+  position: absolute; 
+  top: 10%; 
+  left: 37%; 
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.activity{
+  float: right;
+  margin-right: 150px;
+  height: 10px;
+}
+
+.XpProgress{
+  border: 2px solid black;
+  border-radius: 15px;
+  float: left;
+  height: 510px;
+  width: 545px;
+  margin-top: 22px;
+  margin-left: 12px;
+  background-color: #E8DFCA;
+}
+
+.tere{
+    display: flex;
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Xp{
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 16%;
+  left: 10%;
+}
+
+.down{
+  display: flex;
+  clear: both;
+}
+
+.total{
+  display: flex;
+  clear: both;
+
+}
+
+.doneProjects{
+  border: 2px solid black;
+  border-radius: 15px;
+  float: right;
+  height: auto;
+  width: auto;
+  margin-top: 22px;
+  margin-right: 2px;
+  margin-bottom: 10px;
+  background-color: #E8DFCA;
+}
+
+.circle:hover +  .pointText{
+  display: block;
+}
+
+.pointText {
+  display: none;
+  font-size: 30px;
+}
