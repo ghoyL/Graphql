@@ -2,4 +2,4 @@
 
 Displaying kood/Jõhvi custom profile using GraphQl
 
-link: 
+link: https://ghoyl.github.io/Graphql/
